@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Learning-based task of manipulator to execute throwing task
-description:
+title: MLP throwing task
+category: work
+related_publications: true
+img: assets/img/projects/MLP_learning.jpg
 ---
  We use the MLP to construct a learning neural network to execute a throwing task. The input of the neural network is a 13 dimension vector (4 for posture (quaternion) and 3 for position of the hand, and 6 for twist velocity of the throw action), and the outout is a 7 dimension vector. (landing position and posture).
  

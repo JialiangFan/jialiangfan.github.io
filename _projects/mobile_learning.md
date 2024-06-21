@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Learning of motion-force control scheme of the mobile manipulator.
-description:
+title: Mobile Manipulator
+category: work
+img: assets/img/publication_preview/mobile_learning.jpg
+
 ---
 The mobile platform composes of a Kinova Gen2 manipulator and a homemade differential wheels platform. The communication between mobile platform and manipulator is through ROS system.
 
