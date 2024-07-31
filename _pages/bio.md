@@ -1,7 +1,7 @@
 ---
 layout: page
 title: bio
-permalink: /cv/
+permalink: /bio/
 description: Biography and CV, <a target="_blank" href="/assets/pdf/CV_FJL.pdf"><strong>Download here </strong> </a> 
 social: true
 enable_katex: true
