@@ -12,9 +12,9 @@ profile:
 
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
-academic_service: true
-selected_honor: true
+academic_service: false
+selected_honor: fasle
 ---
  I am currently a first-year PhD student at the [University of Notre Dame](https://www.nd.edu/) majoring in Computer Science Engineering, supervised by Professor [Fanxin Kong](https://sites.google.com/site/fanxink). I received the B.E. degree in Software Engineer from [Shandong University](https://www.en.sdu.edu.cn/), Jinan, China, in 2019. I obtained the Master's degree, majoring in Computer Technology with the School of Information Science and Engineering, [Lanzhou University](https://en.lzu.edu.cn/), Lanzhou, China, in 2023. My main research interests include  cyber-physical systems, robotics, reinforcement learning, and safe learning.
