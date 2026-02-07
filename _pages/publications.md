@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 description: Publications in the past five years.
-nav: true
+nav: false
 nav_order: 2
 ---
 
