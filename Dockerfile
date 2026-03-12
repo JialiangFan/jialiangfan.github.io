@@ -1,41 +1,35 @@
-FROM ruby:latest
-ENV DEBIAN_FRONTEND noninteractive
+# Base image: Ruby with necessary dependencies for Jekyll
+FROM ruby:3.2
 
-Label MAINTAINER Amir Pourmand
-
-RUN apt-get update -y && apt-get install -y --no-install-recommends \
-    locales \
-    imagemagick \
+# Install dependencies
+RUN apt-get update && apt-get install -y \
     build-essential \
-    zlib1g-dev \
-    jupyter-nbconvert \
-    inotify-tools procps && \
-    apt-get clean && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
+    nodejs \
+    && rm -rf /var/lib/apt/lists/*
 
 
-RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
-    locale-gen
+# Create a non-root user with UID 1000
+RUN groupadd -g 1000 vscode && \
+    useradd -m -u 1000 -g vscode vscode
+
+# Set the working directory
+WORKDIR /usr/src/app
+
+# Set permissions for the working directory
+RUN chown -R vscode:vscode /usr/src/app
+
+# Switch to the non-root user
+USER vscode
+
+# Copy Gemfile into the container (necessary for `bundle install`)
+COPY Gemfile ./
 
 
-ENV LANG=en_US.UTF-8 \
-    LANGUAGE=en_US:en \
-    LC_ALL=en_US.UTF-8 \
-    JEKYLL_ENV=production
 
-RUN mkdir /srv/jekyll
+# Install bundler and dependencies
+RUN gem install connection_pool:2.5.0
+RUN gem install bundler:2.3.26
+RUN bundle install
 
-ADD Gemfile.lock /srv/jekyll
-ADD Gemfile /srv/jekyll
-
-WORKDIR /srv/jekyll
-
-# install jekyll and dependencies
-RUN gem install jekyll bundler
-
-RUN bundle install --no-cache
-# && rm -rf /var/lib/gems/3.1.0/cache
-EXPOSE 8080
-
-COPY bin/entry_point.sh /tmp/entry_point.sh
-
-CMD ["/tmp/entry_point.sh"]
+# Command to serve the Jekyll site
+CMD ["jekyll", "serve", "-H", "0.0.0.0", "-w", "--config", "_config.yml,_config_docker.yml"]
