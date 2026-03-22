@@ -1,14 +1,98 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Code"
 permalink: /portfolio/
 author_profile: true
 ---
 
-{% include base_path %}
+<style>
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5em;
+  margin-top: 1em;
+}
+.repo-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.2em;
+  transition: box-shadow 0.2s;
+}
+.repo-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.repo-card h3 {
+  margin: 0 0 0.5em;
+  font-size: 1.1em;
+}
+.repo-card h3 a {
+  color: #0366d6;
+  text-decoration: none;
+}
+.repo-card h3 a:hover {
+  text-decoration: underline;
+}
+.repo-card .repo-desc {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0 0 0.8em;
+}
+.repo-card .repo-meta {
+  font-size: 0.8em;
+  color: #888;
+  display: flex;
+  gap: 1em;
+}
+.repo-card .repo-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+}
+.repo-lang-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+</style>
 
+<div id="repo-grid" class="repo-grid">
+  <p>Loading repositories...</p>
+</div>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
-
+<script>
+const selectedRepos = ['transformer-scratch', 'research_agent'];
+Promise.all(
+  selectedRepos.map(name =>
+    fetch(`https://api.github.com/repos/JFan5/${name}`).then(r => r.json())
+  )
+)
+  .then(repos => {
+    const grid = document.getElementById('repo-grid');
+    const filtered = repos.filter(r => r.id);
+    if (!filtered.length) {
+      grid.innerHTML = '<p>No repositories found.</p>';
+      return;
+    }
+    const langColors = {
+      'Python': '#3572A5', 'JavaScript': '#f1e05a', 'TypeScript': '#2b7489',
+      'HTML': '#e34c26', 'CSS': '#563d7c', 'C++': '#f34b7d', 'C': '#555555',
+      'Java': '#b07219', 'Ruby': '#701516', 'Go': '#00ADD8', 'Rust': '#dea584',
+      'Shell': '#89e051', 'Jupyter Notebook': '#DA5B0B', 'Lua': '#000080'
+    };
+    grid.innerHTML = filtered.map(repo => `
+      <div class="repo-card">
+        <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+        <p class="repo-desc">${repo.description || 'No description'}</p>
+        <div class="repo-meta">
+          ${repo.language ? `<span><span class="repo-lang-dot" style="background:${langColors[repo.language] || '#ccc'}"></span>${repo.language}</span>` : ''}
+          <span>&#9733; ${repo.stargazers_count}</span>
+          <span>&#9906; ${repo.forks_count}</span>
+        </div>
+      </div>
+    `).join('');
+  })
+  .catch(() => {
+    document.getElementById('repo-grid').innerHTML = '<p>Failed to load repositories.</p>';
+  });
+</script>
