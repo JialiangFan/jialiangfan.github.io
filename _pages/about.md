@@ -20,6 +20,62 @@ My research interests include **cyber-physical systems**, **robotics**, **reinfo
 - **[Apr 2025]** I went to Orlando for the SPIE Defense + Commercial Sensing conference.
 - **[Jun 2024]** I joined the University of Notre Dame as a PhD student supervised by [Prof. Fanxin Kong](https://sites.google.com/site/fanxink).
 
+## Featured Project
+
+<div class="featured-project-card">
+  <h3><a href="https://github.com/JFan5/openclaude-ollama" target="_blank">OpenClaude</a></h3>
+  <p class="featured-desc">Build your own agentic coding assistant using open-source models. Core architectural patterns extracted from Claude Code, re-implemented in ~500 lines of Python, runnable with Ollama, vLLM, or any OpenAI-compatible API.</p>
+  <div class="featured-tags">
+    <span>Agentic AI</span>
+    <span>Coding Assistant</span>
+    <span>Open Source</span>
+    <span>Python</span>
+  </div>
+</div>
+
+<style>
+.featured-project-card {
+  border: 2px solid #0366d6;
+  border-radius: 10px;
+  padding: 1.2em 1.5em;
+  margin: 0.8em 0 1.5em;
+  background: linear-gradient(135deg, #f6f8fa 0%, #e8f0fe 100%);
+  transition: box-shadow 0.2s;
+}
+.featured-project-card:hover {
+  box-shadow: 0 4px 12px rgba(3,102,214,0.15);
+}
+.featured-project-card h3 {
+  margin: 0 0 0.4em;
+  font-size: 1.2em;
+}
+.featured-project-card h3 a {
+  color: #0366d6;
+  text-decoration: none;
+}
+.featured-project-card h3 a:hover {
+  text-decoration: underline;
+}
+.featured-project-card .featured-desc {
+  font-size: 0.95em;
+  color: #333;
+  margin: 0 0 0.8em;
+  line-height: 1.5;
+}
+.featured-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+.featured-tags span {
+  background: #0366d6;
+  color: #fff;
+  font-size: 0.75em;
+  padding: 0.2em 0.7em;
+  border-radius: 12px;
+}
+</style>
+
 ## Project Videos
 
 <div class="video-grid-home">

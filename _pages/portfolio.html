@@ -61,7 +61,7 @@ author_profile: true
 </div>
 
 <script>
-const selectedRepos = ['transformer-scratch', 'research_agent'];
+const selectedRepos = ['openclaude-ollama', 'transformer-scratch', 'research_agent'];
 Promise.all(
   selectedRepos.map(name =>
     fetch(`https://api.github.com/repos/JFan5/${name}`).then(r => r.json())
