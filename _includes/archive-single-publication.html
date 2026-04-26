@@ -6,16 +6,36 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="list__item">
-  <article class="archive__item publication__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <h3 class="archive__item-title publication__item-title" itemprop="headline">
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-    </h3>
-    <p class="publication__item-meta">
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% elsif post.teaser %}
+  {% capture teaser %}{{ post.teaser }}{% endcapture %}
+{% endif %}
+
+<article class="publication-card" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="publication-card__media">
+    {% if teaser %}
+      <img src="{% if teaser contains '://' %}{{ teaser }}{% else %}{{ teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" alt="{{ title | escape }}" loading="lazy" />
+    {% else %}
+      <div class="publication-card__placeholder" aria-hidden="true"></div>
+    {% endif %}
+  </div>
+
+  <div class="publication-card__body">
+    <h3 class="publication-card__title" itemprop="headline">{{ title }}</h3>
+
+    {% if post.content and post.content != "" %}
+      <div class="publication-card__excerpt">{{ post.content | markdownify }}</div>
+    {% endif %}
+
+    <p class="publication-card__meta">
       <i>{{ post.venue }}</i>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
-      {% if post.paperurl %} &middot; <a href="{{ post.paperurl }}">Paper</a>{% endif %}
-      {% if post.slidesurl %} &middot; <a href="{{ post.slidesurl }}">Slides</a>{% endif %}
-      {% if post.bibtexurl %} &middot; <a href="{{ post.bibtexurl }}">Bibtex</a>{% endif %}
     </p>
-  </article>
-</div>
+
+    <p class="publication-card__links">
+      {% if post.paperurl %}<a href="{{ post.paperurl }}">View Paper →</a>{% endif %}
+      {% if post.slidesurl %}<a href="{{ post.slidesurl }}">Slides →</a>{% endif %}
+      {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}">Bibtex →</a>{% endif %}
+    </p>
+  </div>
+</article>

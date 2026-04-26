@@ -15,22 +15,31 @@ author_profile: true
 {% assign sorted_publications = site.publications | sort: 'date' | reverse %}
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
+    {% assign category_has_items = false %}
     {% for post in sorted_publications %}
-      {% if post.category != category[0] %}
-        {% continue %}
+      {% if post.category == category[0] %}
+        {% assign category_has_items = true %}
+        {% break %}
       {% endif %}
-      {% unless title_shown %}
-        <h2 class="publication__category-title">{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single-publication.html %}
     {% endfor %}
+    {% if category_has_items %}
+      <h2 class="publication__category-title">{{ category[1].title }}</h2>
+      <div class="publication-grid">
+        {% for post in sorted_publications %}
+          {% if post.category != category[0] %}
+            {% continue %}
+          {% endif %}
+          {% include archive-single-publication.html %}
+        {% endfor %}
+      </div>
+    {% endif %}
   {% endfor %}
 {% else %}
-  {% for post in sorted_publications %}
-    {% include archive-single-publication.html %}
-  {% endfor %}
+  <div class="publication-grid">
+    {% for post in sorted_publications %}
+      {% include archive-single-publication.html %}
+    {% endfor %}
+  </div>
 {% endif %}
 
 
