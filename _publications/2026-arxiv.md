@@ -1,7 +1,7 @@
 ---
 title: "Vulnerability Analysis of Safe Reinforcement Learning via Inverse Constrained Reinforcement Learning"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2026-arxiv
 date: 2026-02-23
 venue: 'arXiv preprint'
