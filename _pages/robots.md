@@ -4,7 +4,7 @@ title: "Robots I've Worked With"
 author_profile: true
 ---
 
-A collection of the robotic platforms I have used in research and projects over the years.
+Meet my **robot friends** — the companions that have stood by me through long nights of debugging, ambitious experiments, and the occasional dramatic failure. Each one has its own personality, quirks, and stories worth telling.
 
 <div class="robot-gallery">
   <figure>
