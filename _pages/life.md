@@ -8,7 +8,7 @@ author_profile: true
 
 Outside of research, I am an avid angler — **lure fishing** is my favorite. There is something endlessly fascinating about reading the water, picking the right lure, and tricking a fish into striking. Every cast is a small experiment; every hookup is a reward you earn.
 
-Over the years I have caught largemouth bass, northern pike, channel catfish, carp, redfish, and more — from local waters around South Bend to the saltwater offshore.
+Over the years I have caught largemouth bass, northern pike, walleye, bullhead catfish, carp, redfish, and more — from local waters around South Bend to the saltwater offshore.
 
 <div class="fishing-gallery">
   <figure>
@@ -20,8 +20,8 @@ Over the years I have caught largemouth bass, northern pike, channel catfish, ca
     <figcaption>Northern pike</figcaption>
   </figure>
   <figure>
-    <img src="/images/fishing/IMG_1354.jpg" alt="Channel catfish">
-    <figcaption>Channel catfish</figcaption>
+    <img src="/images/fishing/IMG_1354.jpg" alt="Bullhead catfish">
+    <figcaption>Bullhead catfish</figcaption>
   </figure>
   <figure>
     <img src="/images/fishing/IMG_1696.jpg" alt="Common carp">
@@ -32,8 +32,8 @@ Over the years I have caught largemouth bass, northern pike, channel catfish, ca
     <figcaption>Redfish — offshore trip</figcaption>
   </figure>
   <figure>
-    <img src="/images/fishing/IMG_8303.jpg" alt="Night fishing">
-    <figcaption>Night catch</figcaption>
+    <img src="/images/fishing/IMG_8303.jpg" alt="Walleye">
+    <figcaption>Walleye</figcaption>
   </figure>
 </div>
 
