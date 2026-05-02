@@ -8,5 +8,8 @@ main:
   - title: "CV"
     url: /files/CV_Jialiang_Fan.pdf
 
+  - title: "Robots"
+    url: /robots/
+
   - title: "Life"
     url: /life/
