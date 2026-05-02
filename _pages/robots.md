@@ -20,8 +20,8 @@ Meet my **robot friends** — the companions that have stood by me through long 
     <figcaption><strong>Kinova Gen3</strong><br><span>Dual-arm setup for bimanual manipulation.</span></figcaption>
   </figure>
   <figure>
-    <img src="/images/robots/IMG_6012.jpg" alt="Mobile manipulator with Kinova arms">
-    <figcaption><strong>Mobile Manipulator</strong><br><span>Tracked base with dual Kinova arms — mobile manipulation.</span></figcaption>
+    <img src="/images/robots/IMG_6012.jpg" alt="Mobile manipulator with Kinova arm">
+    <figcaption><strong>Mobile Manipulator</strong><br><span>Tracked base with a Kinova arm — mobile manipulation.</span></figcaption>
   </figure>
   <figure>
     <img src="/images/robots/IMG_5465.jpg" alt="Universal Robots UR arm">
@@ -36,8 +36,8 @@ Meet my **robot friends** — the companions that have stood by me through long 
     <figcaption><strong>Unitree Go1</strong><br><span>Quadruped — locomotion and legged-robot research.</span></figcaption>
   </figure>
   <figure>
-    <img src="/images/robots/IMG_1849.jpg" alt="Custom legged robot">
-    <figcaption><strong>Custom Legged Robot</strong><br><span>Self-built legged platform with onboard manipulation.</span></figcaption>
+    <img src="/images/robots/IMG_1849.jpg" alt="Wheeled mobile base with Kinova Jaco arm">
+    <figcaption><strong>Wheeled Mobile Manipulator</strong><br><span>Wheeled mobile base paired with a Kinova Jaco arm.</span></figcaption>
   </figure>
 </div>
 
