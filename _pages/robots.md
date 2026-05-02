@@ -16,8 +16,8 @@ Meet my **robot friends** — the companions that have stood by me through long 
     <figcaption><strong>Tabletop Research Arm</strong><br><span>Pick-and-place and policy learning.</span></figcaption>
   </figure>
   <figure>
-    <img src="/images/robots/IMG_9921.jpg" alt="Kinova Gen3 arms">
-    <figcaption><strong>Kinova Gen3</strong><br><span>Dual-arm setup for bimanual manipulation.</span></figcaption>
+    <img src="/images/robots/IMG_9921.jpg" alt="Kinova Gen3 Lite">
+    <figcaption><strong>Kinova Gen3 Lite</strong><br><span>Lightweight 6-DoF arm — research and prototyping.</span></figcaption>
   </figure>
   <figure>
     <img src="/images/robots/IMG_6012.jpg" alt="Mobile manipulator with Kinova arm">
