@@ -41,6 +41,8 @@ Over the years I have caught largemouth bass, northern pike, channel catfish, ca
 
 I love playing **basketball**. It is a hobby I picked up back in 4th grade and one I have kept for life. It is also one of my favorite ways to make friends — during my master's, I played regularly with labmates and built deep friendships on the court. After coming to the U.S. for my PhD, I quickly found a group of friends to hoop with every week, which has been a huge boost to both my physical and mental health.
 
+I am a big fan of **LeBron James** — what I admire most is his discipline and persistence. The way he has stayed at the top of the game for over two decades is a constant reminder that consistency compounds, on the court and off it.
+
 <style>
 .fishing-gallery {
   display: grid;
