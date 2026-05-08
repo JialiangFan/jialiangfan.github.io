@@ -13,6 +13,7 @@ My research interests include **robot learning**, **cyber-physical systems**, **
 
 ## News
 
+- **[May 2026]** I am honored to be joining **[ABB](https://global.abb/)** as a **Research Intern** this summer — taking my fishing talents to East Beach (Lake Erie awaits)!
 - **[May 2026]** I received the **Outstanding Teaching Assistant Award** (2025-2026) from the Department of Computer Science and Engineering at the University of Notre Dame!
 - **[Feb 2026]** Our paper "[SafeGen-LLM: Enhancing Safety Generalization in Task Planning for Robotic Systems](https://arxiv.org/abs/2602.24235)" is now available on arXiv! (First author)
 - **[Feb 2026]** Our paper "[Vulnerability Analysis of Safe Reinforcement Learning via Inverse Constrained Reinforcement Learning](https://arxiv.org/abs/2602.16543)" is now available on arXiv! (First author)
