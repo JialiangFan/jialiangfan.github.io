@@ -61,10 +61,10 @@ author_profile: true
 </div>
 
 <script>
-const selectedRepos = ['openclaude-ollama', 'transformer-scratch', 'research_agent'];
+const selectedRepos = ['awesome-vla-benchmarks', 'research_agent'];
 Promise.all(
   selectedRepos.map(name =>
-    fetch(`https://api.github.com/repos/JFan5/${name}`).then(r => r.json())
+    fetch(`https://api.github.com/repos/JialiangFan/${name}`).then(r => r.json())
   )
 )
   .then(repos => {

@@ -9,13 +9,13 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Jialiang Fan"
+title                    : "Jialiang Fan (樊佳亮)"
 title_separator          : "-"
 name                     : &name "Jialiang Fan"
 description              : &description "Jialiang Fan's academic pages"
 url                      : https://jialiangfan.com
 baseurl                  : ""
-repository               : "jfan5/jfan5.github.io"
+repository               : "JialiangFan/jialiangfan.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -23,7 +23,7 @@ repository               : "jfan5/jfan5.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Jialiang Fan"
+  name             : "Jialiang Fan (樊佳亮)"
   pronouns         : # example: "she/her"
   bio              : "PhD student at University of Notre Dame. Research in cyber-physical systems, robotics, reinforcement learning, and safe learning."
   location         : "Notre Dame, IN"
@@ -35,7 +35,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=6LAGBq8AAAAJ"
 
   # Repositories and software development
-  github           : "jfan5"
+  github           : "JialiangFan"
 
   # Social media
 
