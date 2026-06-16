@@ -9,6 +9,7 @@ tags:
   - reproducibility
   - robot-learning
 excerpt: "A compact project structure for keeping AI and robotics experiments readable, reproducible, and easier to hand off."
+related: false
 ---
 
 Research codebases often fail for boring reasons. The method may be interesting, the experiments may be expensive, and the paper figure may look clean, but the project itself becomes hard to inspect: goals live in scattered notes, scripts assume local paths, checkpoints are separated from configs, and no one can quickly tell which result is the current one.
