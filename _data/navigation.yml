@@ -5,6 +5,9 @@ main:
   - title: "Code"
     url: /portfolio/
 
+  - title: "Blog"
+    url: /blog/
+
   - title: "CV"
     url: /files/CV_Jialiang_Fan.pdf
 
