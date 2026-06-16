@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student (2024 - present) at [University of Notre Dame](https://www.nd.edu/) in the Department of Computer Science and Engineering, supervised by [Prof. Fanxin Kong](https://sites.google.com/site/fanxink). I also work closely with [Prof. Insup Lee](https://www.cis.upenn.edu/~lee/) and [Prof. Oleg Sokolsky](https://www.cis.upenn.edu/~sodarisa/). I received my B.E. in Software Engineering from [Shandong University](https://en.wikipedia.org/wiki/Shandong_University) in 2019 and my M.S. in Computer Technology from [Lanzhou University](https://en.wikipedia.org/wiki/Lanzhou_University) in 2023.
+I am a PhD student (2024 - present) at [University of Notre Dame](https://www.nd.edu/) in the Department of Computer Science and Engineering, supervised by [Prof. Fanxin Kong](https://sites.google.com/site/fanxink). I also work closely with Prof. Insup Lee and Prof. Oleg Sokolsky. I received my B.E. in Software Engineering from [Shandong University](https://en.wikipedia.org/wiki/Shandong_University) in 2019 and my M.S. in Computer Technology from [Lanzhou University](https://en.wikipedia.org/wiki/Lanzhou_University) in 2023.
 
 My research interests include **robot learning**, **cyber-physical systems**, **vision-language-action models**, and **world models**.
 
