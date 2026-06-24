@@ -13,6 +13,7 @@ My research interests include **robot learning**, **cyber-physical systems**, **
 
 ## News
 
+- **[Jun 2026]** I passed my Ph.D. qualifying examination at the University of Notre Dame!
 - **[May 2026]** Our paper "[SafeVLA-Bench: A Benchmark for the Success-Safety Gap in Vision-Language-Action Models](https://arxiv.org/abs/2606.00773)" is now available on arXiv! (First author)
 - **[May 2026]** I am honored to be joining **[ABB](https://global.abb/)** as a **Research Intern** this summer — taking my fishing talents to East Beach (Lake Erie awaits)!
 - **[May 2026]** I received the **Outstanding Teaching Assistant Award** (2025-2026) from the Department of Computer Science and Engineering at the University of Notre Dame!
