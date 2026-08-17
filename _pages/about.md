@@ -13,6 +13,7 @@ My research interests include **robot learning**, **cyber-physical systems**, **
 
 ## News
 
+- **[Aug 2026]** I wrapped up my summer Research Internship at **[ABB](https://global.abb/)** on Aug 14. Huge thanks to my supervisor **Dr. Jianjun Wang** for his full support and recognition throughout!
 - **[Jun 2026]** I passed my Ph.D. qualifying examination at the University of Notre Dame!
 - **[May 2026]** Our paper "[SafeVLA-Bench: A Benchmark for the Success-Safety Gap in Vision-Language-Action Models](https://arxiv.org/abs/2606.00773)" is now available on arXiv! (First author)
 - **[May 2026]** I am honored to be joining **[ABB](https://global.abb/)** as a **Research Intern** this summer — taking my fishing talents to East Beach (Lake Erie awaits)!
